@@ -1,0 +1,20 @@
+Stones:Q.T.:76:40.228:Mamurras:15-37:4:2
+Brice:L.C.:28:98.368:Dongda:10-04:2:3
+Wegner:Q.V.:83:72.175:Skarbimierz Osiedle:1-06:4:3
+Petyankin:D.I.:92:25.785:Kizema:0-02:4:2
+Pealing:M.T.:1:9.451:Rafael Hernandez Ochoa:11-10:3:1
+Rodson:Z.N.:19:13.932:Qingqu:11-41:4:2
+Neaverson:G.M.:46:35.206:Loangmaka:4-16:1:5
+Tomasicchio:I.O.:55:9.759:Sishui:9-22:3:2
+Vause:K.O.:56:68.177:Rokycany:1-17:1:3
+Dottridge:U.W.:37:85.891:Patao:16-45:3:2
+Haskell:C.V.:11:56.215:Baipu:1-02:1:3
+Clacey:F.S.:38:35.908:Facatativá:16-19:1:2
+Parradice:D.Q.:71:89.254:Ampelgading:10-37:4:4
+Deevey:S.F.:33:43.094:Tongquan:8-59:1:1
+Olle:A.N.:45:87.81:Nurlat:6-21:2:4
+Derobert:Z.M.:94:80.954:Georgīevka:19-53:3:4
+Batalle:C.Z.:21:97.774:Cojata:21-11:3:2
+Faers:H.B.:18:47.947:Zinat:3-53:2:1
+MacGibbon:G.R.:55:75.305:Leyuan:21-20:1:5
+Duckinfield:Y.P.:55:54.308:Kināna:7-57:1:5

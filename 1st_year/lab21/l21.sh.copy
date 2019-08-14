@@ -1,0 +1,80 @@
+#!/bin/bash
+
+if [ "$CUR" = "" ]; then
+    current=$( pwd )
+    export current
+fi
+# ---------------------
+if [ -n "$1" ]; then         # Обрабатываем ключи
+    case "$1" in
+	-h) echo "Использование:
+бла бла бла"
+	    exit 0 ;;
+	-f) shift 0> /dev/null
+	    if [[ "$1" == "" ]]; then
+		echo "Не указан файл для считывания"
+		exit 0
+	    fi
+	    file=$(mktemp)
+	    cat "$1" > "$file"
+	    #cat "$file" > "$file"
+	    echo
+	    cat "$file"
+	    exec 0< "$file" ;;
+	
+	*) echo "1"
+	   file=$(mktemp)
+	   cat "$*" > "$file"
+	   exec 0< "$file" ;;
+    esac
+fi
+
+
+if [[ "$1" == "" ]]; then
+    echo "Отсутствуют параметры"
+    exit 0
+fi
+
+while read line; do
+    #------------------------------------
+                                              # Проверок много
+    if [[ "$2" == "" ]]; then                #       не бывает
+	DIR="./"
+    else
+	DIR="$2"
+    fi
+    echo "DIR = $DIR"
+    if [ ! -d "$DIR" ]; then
+	echo "Директории $DIR не существует"
+	exit 0
+    fi
+    if [ ! -f "$1" ]; then
+	echo "Данного файла не существует"
+	exit 0
+    fi
+    #-----------------------------------------
+    echo "Первый параметр = $1"
+    SUFFIX="${1:(-1)}"
+    echo "суффикс = $SUFFIX"
+    for file in "$DIR"*; do
+	if [ ! -f "$file" ]; then
+	    echo "$file"
+	    continue
+	fi
+	new_SUF="${file:(-1)}"
+	if [[ "$SUFFIX" == "$new_SUF" ]]; then
+	    tmp=$(mktemp)
+	    diff "$1" "$file" 1> "$tmp"
+	    if [[ "$1" != "$file" ]] && [[ $(cat "$tmp") == ""  ]] ; then
+		#rm -f "$file"
+		echo "Удален файл $file"
+	    fi
+	    unset tmp
+	fi
+    done
+done
+
+	
+		
+    
+

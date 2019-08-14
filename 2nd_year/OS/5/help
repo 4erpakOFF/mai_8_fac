@@ -1,0 +1,5 @@
+Последовательность команд для подключения динамической библиотеки:
+echo $LD_LIBRARY_PATH
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/OS/5
+export LD_LIBRARY_PATH
+./main-dyn

@@ -1,0 +1,3 @@
+COMMAND   PID  USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
+sh      14782 anton    1w   REG    8,5        0 7078385 test
+lsof    14783 anton    1w   REG    8,5        0 7078385 test
